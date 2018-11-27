@@ -1,0 +1,9 @@
+.submitBtn {
+    width: 90px;
+    height: 40px;
+    font-size: .75em;
+    border-radius: 10%;
+}
+.bg-primary {
+    background-color: blue !important;
+}
