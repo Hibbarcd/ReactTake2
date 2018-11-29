@@ -11,10 +11,10 @@ class Detail extends Component {
   // When this component mounts, grab the book with the _id of this.props.match.params.id
   // e.g. localhost:3000/books/599dcb67f0f16317844583fc
   componentDidMount() {
-    API.getNewBook(this.props.match.params.id)
+    API.getBook(this.props.match.params.id)
       .then(res => this.setState({ book: res.data }))
       .catch(err => console.log(err));
-  };
+  }
 
   render() {
     return (
@@ -40,7 +40,7 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Main Page</Link>
+            <Link to="/">← Back to Add/Search Book</Link>
           </Col>
         </Row>
       </Container>

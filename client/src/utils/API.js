@@ -1,20 +1,15 @@
 import axios from "axios";
 
 export default {
-
-  getNewBook: function(query) {
-    return axios.get("https://www.googleapis.com/books/v1/volumes?q=" + query + "&callback=handleResponse")
-    },
-  //=================================================
-  // Gets all books from db
+  // Gets all books
   getBooks: function() {
     return axios.get("/api/books");
   },
-  // Gets the book with the given id from db
+  // Gets the book with the given id
   getBook: function(id) {
     return axios.get("/api/books/" + id);
   },
-  // Deletes the book with the given id from db
+  // Deletes the book with the given id
   deleteBook: function(id) {
     return axios.delete("/api/books/" + id);
   },
@@ -23,3 +18,4 @@ export default {
     return axios.post("/api/books", bookData);
   }
 };
+
