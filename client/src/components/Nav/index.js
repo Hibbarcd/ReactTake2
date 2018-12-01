@@ -8,7 +8,7 @@ function Nav() {
       <a className="navbar-brand" href="/search">
         Search Google Books
       </a>
-      <Link to={"/books/"}>
+      <Link to={"/"}>
         <button className="submitBtn" href="/" onClick={() => "Library.js"}>Submissions</button>   
       </Link> 
     </nav>
