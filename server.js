@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(routes);
 
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/textadventure";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/reactreadinglist";
 mongoose.connect(MONGODB_URI || { useNewUrlParser: true });
 
 app.listen(PORT, function() {
