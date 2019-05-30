@@ -46,7 +46,7 @@ getNewBook = () => {
       })
       .catch(err => this.setState({ error: err.message }));
   };
-  render () {
+  render () 
   return (
   <Container>
     <Jumbotron>

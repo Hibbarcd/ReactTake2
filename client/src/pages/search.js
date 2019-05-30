@@ -3,6 +3,8 @@ import API from "../utils/API";
 import Container from "../components/container/index";
 import SearchForm from "../components/SearchForm/index";
 // import SearchResults from "../components/SearchResults/index";
+// const BASEURL = "https://www.googleapis.com/books/v1/volumes?q=";
+// const baseSearch = "emily";
 
 class Search extends Component {
     state = {
@@ -12,6 +14,9 @@ class Search extends Component {
         synopsis: "",
         link: ""
       };
+      componentDidMount() {
+        API.searchBook()       
+        };
 
     handleInputChange = event => {
         this.setState({ search: event.target.value });
